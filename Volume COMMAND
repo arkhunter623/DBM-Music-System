@@ -1,0 +1,63 @@
+{
+  "name": "volume",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "bNWBy",
+  "actions": [
+    {
+      "info": "0",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "volume",
+      "name": "Store Command Params"
+    },
+    {
+      "condition": "0",
+      "comparison": "0",
+      "value": "1",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "",
+      "name": "Check Parameters"
+    },
+    {
+      "volume": "${tempVars(\"volume\")}",
+      "name": "Set Audio Volume"
+    },
+    {
+      "title": "",
+      "author": "",
+      "color": "",
+      "timestamp": "true",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "message": ":loud_sound: The Bots volume has been set to `${tempVars(\"volume\")}`!",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "source": "YkvtJ",
+      "type": "true",
+      "name": "Call Command/Event"
+    }
+  ]
+}
