@@ -1,0 +1,48 @@
+{
+  "name": "reconnect",
+  "permissions": "NONE",
+  "restriction": "4",
+  "_id": "mQaYJ",
+  "actions": [
+    {
+      "channel": "0",
+      "varName": "",
+      "message": ":hourglass_flowing_sand: **Reconnecting audio sequences...**",
+      "storage": "1",
+      "varName2": "initmsg",
+      "name": "Send Message"
+    },
+    {
+      "action": "0",
+      "name": "Control Audio"
+    },
+    {
+      "name": "Clear Queue"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "name": "Join Voice Channel"
+    },
+    {
+      "name": "Leave Voice Channel"
+    },
+    {
+      "time": "2",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "name": "Join Voice Channel"
+    },
+    {
+      "storage": "1",
+      "varName": "initmsg",
+      "message": ":white_check_mark: **Complete!**",
+      "name": "Edit Message"
+    }
+  ],
+  "comType": "0"
+}
