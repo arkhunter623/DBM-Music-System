@@ -1,0 +1,38 @@
+{
+  "name": "pause",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "fEOZz",
+  "actions": [
+    {
+      "action": "1",
+      "name": "Control Audio"
+    },
+    {
+      "title": "",
+      "author": "",
+      "color": "df4444",
+      "timestamp": "true",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "message": ":pause_button: Music has been paused! Use resume command to start playing again!",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    }
+  ]
+}
