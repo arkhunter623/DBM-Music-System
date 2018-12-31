@@ -1,0 +1,25 @@
+{
+  "name": "nowplaying",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "Twedm",
+  "actions": [
+    {
+      "server": "0",
+      "info": "9",
+      "storage": "1",
+      "varName": "song url",
+      "varName2": "",
+      "name": "Store Audio Info"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "${tempVars(\"song url\")}",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    }
+  ],
+  "comType": "0"
+}
