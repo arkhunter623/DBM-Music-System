@@ -1,0 +1,37 @@
+{
+  "name": "clearqueue",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "XbNeV",
+  "actions": [
+    {
+      "name": "Clear Queue"
+    },
+    {
+      "title": "",
+      "author": "",
+      "color": "",
+      "timestamp": "true",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "message": ":recycle: The music queue has been cleared!",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    }
+  ]
+}
