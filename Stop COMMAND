@@ -1,0 +1,51 @@
+{
+  "name": "stop",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "dENEa",
+  "actions": [
+    {
+      "action": "0",
+      "name": "Control Audio"
+    },
+    {
+      "title": "",
+      "author": "",
+      "color": "df4444",
+      "timestamp": "true",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "",
+      "thumbUrl": "https://watchbot.me/i/u/233536.png",
+      "storage": "1",
+      "varName": "embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "message": ":stop_button: The Bot has stopped playing music! Resume command will not work!",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "action": "1",
+      "name": "Control Audio"
+    },
+    {
+      "time": "1",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "action": "2",
+      "name": "Control Audio"
+    }
+  ]
+}
