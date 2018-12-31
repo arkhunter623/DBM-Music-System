@@ -1,0 +1,39 @@
+{
+  "name": "connect",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "TDChS",
+  "actions": [
+    {
+      "title": "",
+      "author": "",
+      "color": "",
+      "timestamp": "true",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "message": ":white_check_mark:\n**Joined the command executors current voice channel!**",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "name": "Join Voice Channel"
+    }
+  ]
+}
