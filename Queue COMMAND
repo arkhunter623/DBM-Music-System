@@ -1,0 +1,381 @@
+{
+  "name": "queue",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "qmTsw",
+  "actions": [
+    {
+      "title": "Current Queue List:",
+      "author": "",
+      "color": "e2e2e2",
+      "timestamp": "true",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "server": "0",
+      "info": "4",
+      "storage": "1",
+      "varName": "nexturl",
+      "varName2": "",
+      "name": "Store Audio Info"
+    },
+    {
+      "server": "0",
+      "info": "3",
+      "storage": "1",
+      "varName": "queuelist",
+      "varName2": "",
+      "name": "Store Audio Info"
+    },
+    {
+      "slice": "${tempVars(\"queuelist\")}",
+      "startingNumber": "0",
+      "sliceLength": "11",
+      "storage": "1",
+      "varName": "slice1",
+      "name": "Slice"
+    },
+    {
+      "slice": "${tempVars(\"queuelist\")}",
+      "startingNumber": "12",
+      "sliceLength": "11",
+      "storage": "1",
+      "varName": "slice2",
+      "name": "Slice"
+    },
+    {
+      "slice": "${tempVars(\"queuelist\")}",
+      "startingNumber": "24",
+      "sliceLength": "11",
+      "storage": "1",
+      "varName": "slice3",
+      "name": "Slice"
+    },
+    {
+      "slice": "${tempVars(\"queuelist\")}",
+      "startingNumber": "36",
+      "sliceLength": "11",
+      "storage": "1",
+      "varName": "slice4",
+      "name": "Slice"
+    },
+    {
+      "slice": "${tempVars(\"queuelist\")}",
+      "startingNumber": "48",
+      "sliceLength": "11",
+      "storage": "1",
+      "varName": "slice5",
+      "name": "Slice"
+    },
+    {
+      "server": "0",
+      "info": "5",
+      "storage": "1",
+      "varName": "queuelength",
+      "varName2": "",
+      "name": "Store Audio Info"
+    },
+    {
+      "storage": "1",
+      "varName": "queuelength",
+      "comparison": "1",
+      "value": "1",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "15",
+      "name": "Check Variable"
+    },
+    {
+      "video": "https://youtube.com/watch?v=${tempVars(\"slice1\")}",
+      "key": "INSERT KEY HERE!! ",
+      "info": "1",
+      "resultNo": "0",
+      "storage": "1",
+      "varName": "videoname1",
+      "name": "YouTube Search"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "message": "`1.` ${tempVars(\"videoname1\")}\n\n**Next Song in Queue:**\n${tempVars(\"videoname1\")}\n\n**Total Queue Length:**\n${tempVars(\"queuelength\")}",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "storage": "1",
+      "varName": "queuelength",
+      "comparison": "1",
+      "value": "2",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "21",
+      "name": "Check Variable"
+    },
+    {
+      "video": "https://youtube.com/watch?v=${tempVars(\"slice1\")}",
+      "key": "INSERT KEY HERE!! ",
+      "info": "1",
+      "resultNo": "0",
+      "storage": "1",
+      "varName": "videoname1",
+      "name": "YouTube Search"
+    },
+    {
+      "video": "https://youtube.com/watch?v=${tempVars(\"slice2\")}",
+      "key": "INSERT KEY HERE!! ",
+      "info": "1",
+      "resultNo": "0",
+      "storage": "1",
+      "varName": "videoname2",
+      "name": "YouTube Search"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "message": "`1.` ${tempVars(\"videoname1\")}\n`2.` ${tempVars(\"videoname2\")}\n\n**Next Song in Queue:**\n${tempVars(\"videoname1\")}\n\n**Total Queue Length:**\n${tempVars(\"queuelength\")}",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "storage": "1",
+      "varName": "queuelength",
+      "comparison": "1",
+      "value": "3",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "28",
+      "name": "Check Variable"
+    },
+    {
+      "video": "https://youtube.com/watch?v=${tempVars(\"slice1\")}",
+      "key": "INSERT KEY HERE!! ",
+      "info": "1",
+      "resultNo": "0",
+      "storage": "1",
+      "varName": "videoname1",
+      "name": "YouTube Search"
+    },
+    {
+      "video": "https://youtube.com/watch?v=${tempVars(\"slice2\")}",
+      "key": "INSERT KEY HERE!! ",
+      "info": "1",
+      "resultNo": "0",
+      "storage": "1",
+      "varName": "videoname2",
+      "name": "YouTube Search"
+    },
+    {
+      "video": "https://youtube.com/watch?v=${tempVars(\"slice3\")}",
+      "key": "INSERT KEY HERE!! ",
+      "info": "1",
+      "resultNo": "0",
+      "storage": "1",
+      "varName": "videoname3",
+      "name": "YouTube Search"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "message": "`1.` ${tempVars(\"videoname1\")}\n`2.` ${tempVars(\"videoname2\")}\n`3.` ${tempVars(\"videoname3\")}\n\n**Next Song in Queue:**\n${tempVars(\"videoname1\")}\n\n**Total Queue Length:**\n${tempVars(\"queuelength\")}",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "storage": "1",
+      "varName": "queuelength",
+      "comparison": "1",
+      "value": "4",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "36",
+      "name": "Check Variable"
+    },
+    {
+      "video": "https://youtube.com/watch?v=${tempVars(\"slice1\")}",
+      "key": "INSERT KEY HERE!! ",
+      "info": "1",
+      "resultNo": "0",
+      "storage": "1",
+      "varName": "videoname1",
+      "name": "YouTube Search"
+    },
+    {
+      "video": "https://youtube.com/watch?v=${tempVars(\"slice2\")}",
+      "key": "INSERT KEY HERE!! ",
+      "info": "1",
+      "resultNo": "0",
+      "storage": "1",
+      "varName": "videoname2",
+      "name": "YouTube Search"
+    },
+    {
+      "video": "https://youtube.com/watch?v=${tempVars(\"slice3\")}",
+      "key": "INSERT KEY HERE!! ",
+      "info": "1",
+      "resultNo": "0",
+      "storage": "1",
+      "varName": "videoname3",
+      "name": "YouTube Search"
+    },
+    {
+      "video": "https://youtube.com/watch?v=${tempVars(\"slice4\")}",
+      "key": "INSERT KEY HERE!! ",
+      "info": "1",
+      "resultNo": "0",
+      "storage": "1",
+      "varName": "videoname4",
+      "name": "YouTube Search"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "message": "`1.` ${tempVars(\"videoname1\")}\n`2.` ${tempVars(\"videoname2\")}\n`3.` ${tempVars(\"videoname3\")}\n`4.` ${tempVars(\"videoname4\")}\n\n**Next Song in Queue:**\n${tempVars(\"videoname1\")}\n\n**Total Queue Length:**\n${tempVars(\"queuelength\")}",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "storage": "1",
+      "varName": "queuelength",
+      "comparison": "4",
+      "value": "4",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "45",
+      "name": "Check Variable"
+    },
+    {
+      "video": "https://youtube.com/watch?v=${tempVars(\"slice1\")}",
+      "key": "INSERT KEY HERE!! ",
+      "info": "1",
+      "resultNo": "0",
+      "storage": "1",
+      "varName": "videoname1",
+      "name": "YouTube Search"
+    },
+    {
+      "video": "https://youtube.com/watch?v=${tempVars(\"slice2\")}",
+      "key": "INSERT KEY HERE!! ",
+      "info": "1",
+      "resultNo": "0",
+      "storage": "1",
+      "varName": "videoname2",
+      "name": "YouTube Search"
+    },
+    {
+      "video": "https://youtube.com/watch?v=${tempVars(\"slice3\")}",
+      "key": "INSERT KEY HERE!! ",
+      "info": "1",
+      "resultNo": "0",
+      "storage": "1",
+      "varName": "videoname3",
+      "name": "YouTube Search"
+    },
+    {
+      "video": "https://youtube.com/watch?v=${tempVars(\"slice4\")}",
+      "key": "INSERT KEY HERE!! ",
+      "info": "1",
+      "resultNo": "0",
+      "storage": "1",
+      "varName": "videoname4",
+      "name": "YouTube Search"
+    },
+    {
+      "video": "https://youtube.com/watch?v=${tempVars(\"slice5\")}",
+      "key": "INSERT KEY HERE!!",
+      "info": "1",
+      "resultNo": "0",
+      "storage": "1",
+      "varName": "videoname5",
+      "name": "YouTube Search"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "message": "`1.` ${tempVars(\"videoname1\")}\n`2.` ${tempVars(\"videoname2\")}\n`3.` ${tempVars(\"videoname3\")}\n`4.` ${tempVars(\"videoname4\")}\n`5.` ${tempVars(\"videoname5\")}\n\n**Next Song in Queue:**\n${tempVars(\"videoname1\")}\n\n**Total Queue Length:**\n${tempVars(\"queuelength\")}",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "title": "Error!",
+      "author": "",
+      "color": "df4444",
+      "timestamp": "true",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "embederr",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embederr",
+      "message": "This shouldn't have happened... Sorry but an error occured",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    }
+  ]
+}
