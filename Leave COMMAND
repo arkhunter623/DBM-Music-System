@@ -1,0 +1,37 @@
+{
+  "name": "leave",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "MJQRy",
+  "actions": [
+    {
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "4",
+      "name": "Check is Bot in Voice Channel"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Left voice channel",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "Leave Voice Channel"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Warning!!!! Bots not in a voice channel!!!",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    }
+  ]
+}
